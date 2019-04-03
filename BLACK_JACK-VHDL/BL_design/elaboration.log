@@ -1,0 +1,21 @@
+elbread.dll ver. 1.0.5.365 Mon May 14 23:15:47 2018
+
+
+--------------------------------------
+Entity      | Architecture | Library
+--------------------------------------
+black_jack  | arh          | BL_design
+rcg         | arh          | bl_design
+card_mem    | arh1         | bl_design
+hands_mem   | arh          | bl_design
+comp_unit   | arh          | bl_design
+move_mem    | arh          | bl_design
+--------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+numeric_std     | ieee
+-------------------------

@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>DRC Report File - TEST.bde</TITLE>
+<STYLE>
+.Err	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.Warn	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.Info	{color:'#000000';cursor:hand;text-decoration:underline;}
+.ErrH	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.WarnH	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.InfoH	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Err1	{color:'#FF0000';}
+.Warn1	{color:'#0000FF';}
+.Info1	{color:'#000000';}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" BACKGROUND="C:\PROGRA~2\Aldec\ACTIVE~1.3\\Flows\Res\default.bmp">
+<FONT FACE="Verdana" SIZE=2>
+
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>DRC Report File - TEST.bde</H2>
+Created on Sun May 13 22:49:53 2018
+
+<HR NOSHADE COLOR="#008080">
+<SPAN class=Info1>Checking&nbsp;file&nbsp;'C:\Users\USER\Desktop\BLACK_JACK\BL_design\src\TEST.bde'.</SPAN><BR>
+<SPAN class=Info1>File&nbsp;loaded&nbsp;in&nbsp;0&nbsp;seconds.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=29');">Unconnected&nbsp;input&nbsp;port&nbsp;'E1'.&nbsp;Instance&nbsp;'U1'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=29');">Unconnected&nbsp;input&nbsp;port&nbsp;'E2'.&nbsp;Instance&nbsp;'U1'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=29');">Unconnected&nbsp;input&nbsp;port&nbsp;'N'.&nbsp;Instance&nbsp;'U1'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=29');">Unconnected&nbsp;input&nbsp;port&nbsp;'Y'.&nbsp;Instance&nbsp;'U1'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=38');">Unconnected&nbsp;input&nbsp;port&nbsp;'CARD(0:3)'.&nbsp;Instance&nbsp;'U2'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=38');">Unconnected&nbsp;input&nbsp;port&nbsp;'ENABLE'.&nbsp;Instance&nbsp;'U2'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=38');">Unconnected&nbsp;input&nbsp;port&nbsp;'RESET'.&nbsp;Instance&nbsp;'U2'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=47');">Unconnected&nbsp;input&nbsp;port&nbsp;'EN'.&nbsp;Instance&nbsp;'U3'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=47');">Unconnected&nbsp;input&nbsp;port&nbsp;'EN1'.&nbsp;Instance&nbsp;'U3'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=47');">Unconnected&nbsp;input&nbsp;port&nbsp;'END_GAME'.&nbsp;Instance&nbsp;'U3'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=47');">Unconnected&nbsp;input&nbsp;port&nbsp;'RESET'.&nbsp;Instance&nbsp;'U3'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=47');">Unconnected&nbsp;input&nbsp;port&nbsp;'S1(0:4)'.&nbsp;Instance&nbsp;'U3'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=47');">Unconnected&nbsp;input&nbsp;port&nbsp;'S2(0:4)'.&nbsp;Instance&nbsp;'U3'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=56');">Unconnected&nbsp;input&nbsp;port&nbsp;'ENABLE_1'.&nbsp;Instance&nbsp;'U4'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=56');">Unconnected&nbsp;input&nbsp;port&nbsp;'ENABLE_2'.&nbsp;Instance&nbsp;'U4'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=56');">Unconnected&nbsp;input&nbsp;port&nbsp;'IN_CARD(0:4)'.&nbsp;Instance&nbsp;'U4'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=56');">Unconnected&nbsp;input&nbsp;port&nbsp;'P1'.&nbsp;Instance&nbsp;'U4'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=56');">Unconnected&nbsp;input&nbsp;port&nbsp;'P2'.&nbsp;Instance&nbsp;'U4'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=56');">Unconnected&nbsp;input&nbsp;port&nbsp;'RESET'.&nbsp;Instance&nbsp;'U4'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=56');">Unconnected&nbsp;input&nbsp;port&nbsp;'TURN'.&nbsp;Instance&nbsp;'U4'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=65');">Unconnected&nbsp;input&nbsp;port&nbsp;'G_OVER'.&nbsp;Instance&nbsp;'U5'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=65');">Unconnected&nbsp;input&nbsp;port&nbsp;'N'.&nbsp;Instance&nbsp;'U5'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=65');">Unconnected&nbsp;input&nbsp;port&nbsp;'P1'.&nbsp;Instance&nbsp;'U5'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=65');">Unconnected&nbsp;input&nbsp;port&nbsp;'P2'.&nbsp;Instance&nbsp;'U5'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=65');">Unconnected&nbsp;input&nbsp;port&nbsp;'RESET'.&nbsp;Instance&nbsp;'U5'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=65');">Unconnected&nbsp;input&nbsp;port&nbsp;'Y'.&nbsp;Instance&nbsp;'U5'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=83');">Unconnected&nbsp;input&nbsp;port&nbsp;'ENABLE_1'.&nbsp;Instance&nbsp;'U6'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=83');">Unconnected&nbsp;input&nbsp;port&nbsp;'ENABLE_2'.&nbsp;Instance&nbsp;'U6'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=83');">Unconnected&nbsp;input&nbsp;port&nbsp;'GIVE_AGAIN'.&nbsp;Instance&nbsp;'U6'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=83');">Unconnected&nbsp;input&nbsp;port&nbsp;'GIVE_CARD'.&nbsp;Instance&nbsp;'U6'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=83');">Unconnected&nbsp;input&nbsp;port&nbsp;'GIVE_NEW_CARD'.&nbsp;Instance&nbsp;'U6'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=83');">Unconnected&nbsp;input&nbsp;port&nbsp;'RESET'.&nbsp;Instance&nbsp;'U6'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=29');">Unconnected&nbsp;output&nbsp;port&nbsp;'CC(0:3)'.&nbsp;Instance&nbsp;'U1'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=29');">Unconnected&nbsp;output&nbsp;port&nbsp;'GAME_RESULT'.&nbsp;Instance&nbsp;'U1'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=29');">Unconnected&nbsp;output&nbsp;port&nbsp;'S1(0:4)'.&nbsp;Instance&nbsp;'U1'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=29');">Unconnected&nbsp;output&nbsp;port&nbsp;'S2(0:4)'.&nbsp;Instance&nbsp;'U1'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=29');">Unconnected&nbsp;output&nbsp;port&nbsp;'TURN'.&nbsp;Instance&nbsp;'U1'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=38');">Unconnected&nbsp;output&nbsp;port&nbsp;'GIVE_NEW'.&nbsp;Instance&nbsp;'U2'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=38');">Unconnected&nbsp;output&nbsp;port&nbsp;'VER_CARD(0:4)'.&nbsp;Instance&nbsp;'U2'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=47');">Unconnected&nbsp;output&nbsp;port&nbsp;'END_RESULT'.&nbsp;Instance&nbsp;'U3'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=47');">Unconnected&nbsp;output&nbsp;port&nbsp;'MASTER_RESET'.&nbsp;Instance&nbsp;'U3'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=47');">Unconnected&nbsp;output&nbsp;port&nbsp;'P1S'.&nbsp;Instance&nbsp;'U3'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=47');">Unconnected&nbsp;output&nbsp;port&nbsp;'P2S'.&nbsp;Instance&nbsp;'U3'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=56');">Unconnected&nbsp;output&nbsp;port&nbsp;'GIVE_AGAIN'.&nbsp;Instance&nbsp;'U4'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=56');">Unconnected&nbsp;output&nbsp;port&nbsp;'S1(0:4)'.&nbsp;Instance&nbsp;'U4'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=56');">Unconnected&nbsp;output&nbsp;port&nbsp;'S2(0:4)'.&nbsp;Instance&nbsp;'U4'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=65');">Unconnected&nbsp;output&nbsp;port&nbsp;'END_GAME'.&nbsp;Instance&nbsp;'U5'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=65');">Unconnected&nbsp;output&nbsp;port&nbsp;'GIVE'.&nbsp;Instance&nbsp;'U5'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=65');">Unconnected&nbsp;output&nbsp;port&nbsp;'TURN'.&nbsp;Instance&nbsp;'U5'.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\Users\\USER\\Desktop\\BLACK_JACK\\BL_design\\src\\TEST.bde','','-errorid=83');">Unconnected&nbsp;output&nbsp;port&nbsp;'GEN_CARD(0:3)'.&nbsp;Instance&nbsp;'U6'.</SPAN><BR>
+<SPAN class=Info1>File&nbsp;checked&nbsp;in&nbsp;0&nbsp;seconds.</SPAN><BR>
+<SPAN class=Warn1>TEST.bde&nbsp;-&nbsp;0&nbsp;error(s),&nbsp;50&nbsp;warning(s)</SPAN><BR>
+</FONT>
+       
+        
+</BODY>
+</HTML>

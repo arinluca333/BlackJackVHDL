@@ -1,0 +1,1 @@
+-w -s "C:\Users\USER\Desktop\BLACK_JACK\library.cfg"  -j "C:\Users\USER\Desktop\BLACK_JACK\BL_design\projlib.cfg"  -d "C:\Users\USER\Desktop\BLACK_JACK\BL_design\compile\"  -work BL_design -dbg -e 100 "C:\Users\USER\Desktop\BLACK_JACK\BL_design\src\HANDS_MEM.vhd" 

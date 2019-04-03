@@ -1,0 +1,16 @@
+6826
+~E 1 "./src/HANDS_MEM.vhd" 5 hands_mem
+~A 1 "./src/HANDS_MEM.vhd" 12 arh
+~E 1 "./src/CARD_MEM.vhd" 5 card_mem
+~A 1 "./src/CARD_MEM.vhd" 12 arh1
+~E 1 "./src/BLACK_JACK.vhd" 4 black_jack
+~A 1 "./src/BLACK_JACK.vhd" 12 arh
+~E 1 "./src/COMP_UNIT.vhd" 4 comp_unit
+~A 1 "./src/COMP_UNIT.vhd" 11 arh
+~E 1 "./src/MOVE_MEM.vhd" 4 move_mem
+~A 1 "./src/MOVE_MEM.vhd" 10 arh
+~E 1 "./src/HANDS_REG.vhd" 5 hands_reg
+~A 1 "./src/HANDS_REG.vhd" 11 arh
+~E 1 "./src/RCG.vhd" 4 rcg
+~A 1 "./src/RCG.vhd" 9 arh
+~E 1 "./compile/TEST.vhd" 25 test

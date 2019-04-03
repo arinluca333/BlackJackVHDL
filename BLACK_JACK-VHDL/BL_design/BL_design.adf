@@ -1,0 +1,52 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=BL_design
+
+[Library]
+BL_design=.\BL_design.lib
+
+[$LibMap$]
+BL_design=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=black_jack|arh|0  
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/CARD_MEM.vhd=-1
+/HANDS_MEM.vhd=-1
+/COMP_UNIT.vhd=-1
+/RCG.vhd=-1
+/BLACK_JACK.vhd=-1
+/MOVE_MEM.vhd=-1
+/BLACK_JACK.bde=-1
+
+[Files.Data]
+.\src\CARD_MEM.vhd=VHDL Source Code
+.\src\HANDS_MEM.vhd=VHDL Source Code
+.\src\COMP_UNIT.vhd=VHDL Source Code
+.\src\RCG.vhd=VHDL Source Code
+.\src\BLACK_JACK.vhd=VHDL Source Code
+.\src\MOVE_MEM.vhd=VHDL Source Code
+.\src\BLACK_JACK.bde=Block Diagram
+

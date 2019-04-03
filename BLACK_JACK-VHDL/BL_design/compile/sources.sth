@@ -1,0 +1,10 @@
+[Files List]
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\STD/src/standard.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/stdlogic.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/numstd.vhd=S
+G:\BLACK_JACK\BL_design/src/MOVE_MEM.vhd=S
+G:\BLACK_JACK\BL_design/src/COMP_UNIT.vhd=S
+G:\BLACK_JACK\BL_design/src/HANDS_MEM.vhd=S
+G:\BLACK_JACK\BL_design/src/CARD_MEM.vhd=S
+G:\BLACK_JACK\BL_design/src/RCG.vhd=S
+G:\BLACK_JACK\BL_design/src/BLACK_JACK.vhd=S

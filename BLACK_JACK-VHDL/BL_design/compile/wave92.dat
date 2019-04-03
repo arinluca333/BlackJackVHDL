@@ -1,0 +1,66 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$S 1 1 END_GAME
+$S 5 1 P1S
+$S 9 1 P2S
+$S +4 1 T
+$S +4 1 GIVE_C
+$S +4 1 5 1 N
+$S +4 1 5 0 AGAIN
+$S +4 1 R
+I 2 "a#24#std_logic_vector(0 to 3)1 rict0 3 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 49 2 4 RG_CARD
+$SC 33-45/4
+I 3 "a#24#std_logic_vector(0 to 4)1 rict0 4 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 70 3 5 0 5 CURENT
+$SC 50-66/4
+I 4 "a#16#UNSIGNED(0 to 4)1 rict0 4 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 91 4 5 SUM1
+$SC 71-87/4
+$BUS S +25 4 5 SUM2
+$SC 92-+16/4
+I 5 "i#7#integerrict-2147483648 2147483647 "
+$S +5 5 G_OVER
+$IN +4 1 Y
+$IN +4 1 N
+$IN +4 1 E1
+$IN +4 1 E2
+$BUS OUT +24 3 5 S1
+$SC 133-+16/4
+$BUS OUT +25 3 5 S2
+$SC 154-+16/4
+$BUS OUT +21 2 4 CC
+$SC 175-+12/4
+$OUT +5 5 GAME_RESULT
+$OUT +4 1 TURN
+$S 1 0 END_GAME
+$S 5 0 P1S
+$S 9 0 P2S
+$S +4 0 T
+$S +4 0 GIVE_C
+$S +4 0 5 1 N
+$S +4 0 5 0 AGAIN
+$S +4 0 R
+$BUS S 200 2 4 RG_CARD
+$SC 33-45/4
+$BUS S 201 3 5 0 5 CURENT
+$SC 50-66/4
+$BUS S 202 4 5 SUM1
+$SC 71-87/4
+$BUS S 203 4 5 SUM2
+$SC 92-+16/4
+$S +5 0 G_OVER
+$IN +4 0 Y
+$IN +4 0 N
+$IN +4 0 E1
+$IN +4 0 E2
+$BUS OUT +75 3 5 S1
+$SC 133-+16/4
+$BUS OUT +56 3 5 S2
+$SC 154-+16/4
+$BUS OUT +36 2 4 CC
+$SC 175-+12/4
+$OUT +5 0 GAME_RESULT
+$OUT +4 0 TURN
+$ENDWAVE

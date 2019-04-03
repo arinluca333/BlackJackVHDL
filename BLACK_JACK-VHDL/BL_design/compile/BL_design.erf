@@ -1,0 +1,5 @@
+MESSAGE "File: C:\Users\USER\Desktop\BLACK_JACK\BL_design\src\HANDS_MEM.vhd" 
+MESSAGE "Compile Entity "HANDS_MEM"" 
+MESSAGE "Entity `HANDS_MEM' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "ARH" of Entity "HANDS_MEM"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

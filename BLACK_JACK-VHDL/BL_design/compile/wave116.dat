@@ -1,0 +1,34 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$S 1 1 END_GAME
+$S 5 1 P1S
+$S 9 1 P2S
+$S +4 1 TURN
+$S +4 1 GIVE_C
+$S +4 1 5 1 N
+$S +4 1 R
+I 2 "a#24#std_logic_vector(0 to 3)1 rict0 3 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 45 2 4 RG_CARD
+$SC 29-41/4
+I 3 "a#24#std_logic_vector(0 to 4)1 rict0 4 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 66 3 5 0 5 CURENT
+$SC 46-62/4
+I 4 "a#16#UNSIGNED(0 to 4)1 rict0 4 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 87 4 5 SUM1
+$SC 67-83/4
+$BUS S +25 4 5 SUM2
+$SC 88-+16/4
+$IN +5 1 Y
+$IN +4 1 N
+$IN +4 1 E1
+$IN +4 1 E2
+$BUS OUT +24 3 5 S1
+$SC 125-+16/4
+$BUS OUT +25 3 5 S2
+$SC 146-+16/4
+$BUS OUT +21 2 4 CC
+$SC 167-+12/4
+I 5 "i#7#integerrict-2147483648 2147483647 "
+$OUT +5 5 GAME_RESULT
+IENDWAVE

@@ -1,0 +1,7 @@
+.\src\CARD_MEM.vhd
+.\src\HANDS_MEM.vhd
+.\src\COMP_UNIT.vhd
+.\src\RCG.vhd
+.\src\BLACK_JACK.vhd
+.\src\MOVE_MEM.vhd
+.\src\BLACK_JACK.bde

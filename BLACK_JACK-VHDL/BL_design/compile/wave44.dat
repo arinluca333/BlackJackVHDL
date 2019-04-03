@@ -1,0 +1,17 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "a#24#std_logic_vector(0 to 3)1 rict0 3 e#9#std_logicc9 UX01ZWLH-"
+I 2 "e#9#std_logicc9 UX01ZWLH-"
+$BUS IN 17 1 4 CARD
+$SC 1-13/4
+I 3 "a#24#std_logic_vector(0 to 4)1 rict0 4 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT 38 3 5 VER_CARD
+$SC 18-34/4
+$IN +5 2 RESET
+$IN +4 2 ENABLE
+$OUT +4 2 GIVE_NEW
+I 4 "a#5#C_MEM1 rict2 14 i#7#integerrict-2147483648 2147483647 "
+I 5 "i#7#integerrict-2147483648 2147483647 "
+$BUS S +56 4 13 MEM
+$SC 51-99/4
+$ENDWAVE

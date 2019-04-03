@@ -1,0 +1,12 @@
+[Version]
+Version=6.3
+[Designs]
+bl_design=.\BL_design\BL_design.adf
+[Browser]
+sort=order
+mode=asc
+[Order]
+order=1
+macro=
+[Expand]
+bl_design=1
