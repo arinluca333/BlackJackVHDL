@@ -1,0 +1,1 @@
+BlackJack game made in ActiveHDL with VHDL. Using pseudo random number generator.
